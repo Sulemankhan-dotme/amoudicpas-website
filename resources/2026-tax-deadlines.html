@@ -48,6 +48,49 @@
       }
     }
 
+    /* Override dark why-section for readable calendar */
+    .resource-page .why-section {
+      background: var(--bg-surface, #f7fafc);
+    }
+    .resource-page .why-section::before {
+      display: none;
+    }
+    .resource-page .why-section .section-header h1,
+    .resource-page .why-section .section-header h2 {
+      color: var(--primary, #1a365d);
+    }
+    .resource-page .why-section .section-header p {
+      color: #4a5568;
+    }
+    .resource-page .why-section .section-label {
+      color: var(--gold, #b7791f);
+    }
+    .resource-page .why-section .section-label::before {
+      background: var(--gold, #b7791f);
+    }
+    .resource-page .why-item {
+      background: white;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+    .resource-page .why-item:hover {
+      background: white;
+      border-color: #cbd5e0;
+    }
+    .resource-page .why-item h4 {
+      color: var(--primary, #1a365d);
+      margin-bottom: 12px;
+    }
+    .resource-page .why-item p {
+      color: #4a5568;
+    }
+    .resource-page .why-number {
+      color: var(--primary, #1a365d);
+    }
+    .resource-page .deadline-list li {
+      color: #2d3748;
+    }
+
     .resource-page .pro-tip {
       background: #f0fff4;
       border-left: 4px solid #38a169;
@@ -97,12 +140,6 @@
     }
     .resource-page .deadline-list li strong {
       color: #1a365d;
-    }
-    .resource-page .why-item {
-      text-align: left;
-    }
-    .resource-page .why-item h4 {
-      margin-bottom: 12px;
     }
     .print-btn-wrap {
       margin-bottom: 24px;
