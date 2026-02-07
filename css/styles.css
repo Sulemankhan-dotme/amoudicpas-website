@@ -2528,8 +2528,21 @@ section {
   font-size: 0.875rem;
   font-weight: 600;
   font-family: var(--font-body);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1001;
+}
+
+/* Push header below the banner */
+.urgency-banner ~ .header {
+  top: 38px;
+}
+
+/* Push page content down to account for banner + header */
+body:has(.urgency-banner) {
+  padding-top: 38px;
 }
 
 .urgency-banner a {
@@ -2547,6 +2560,14 @@ section {
     font-size: 0.8rem;
     padding: 8px 12px;
     line-height: 1.4;
+  }
+
+  .urgency-banner ~ .header {
+    top: 50px;
+  }
+
+  body:has(.urgency-banner) {
+    padding-top: 50px;
   }
 }
 
