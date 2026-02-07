@@ -1654,6 +1654,14 @@ section {
   font-size: 0.9375rem;
 }
 
+.hero-form-card .form-privacy {
+  color: var(--text-light) !important;
+  font-size: 0.8rem !important;
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .landing-form .form-group {
   margin-bottom: 16px;
   display: flex;
